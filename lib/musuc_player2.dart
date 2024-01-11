@@ -11,6 +11,19 @@ class musicplayer extends StatefulWidget {
 class _musicplayerState extends State<musicplayer> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            IconButton(
+              icon: Icon(Icons.arrow_back_ios_new),
+              onPressed: ()=>Navigator.of(context).pop(),
+
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
